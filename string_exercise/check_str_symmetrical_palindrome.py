@@ -13,9 +13,29 @@
 # Output:
 # The entered string is symmetrical
 # The entered string is palindrome
+
+# --------------------------------------------------------------------------------------------------------
+# Approach 2: Using Slicing
 def check_sym_pali(input_str):
-    pass
-input_str = 'khokho'
+    size = len(input_str)
+    mid = size//2
+    str1 = input_str[:mid]
+    str2 = input_str[mid:]
+    print(str1)
+    print(str2)
+
+    if str1 == str2:
+        print('The entered string is symmetrical')
+    else:
+        print('The entered string is not symmetrical')
+
+    if str1 == str2[::-1]:
+        print('The entered string is palindrome')
+    else:
+        print('The entered string is not palindrome')
+
+# -----------------------------------------------------------------------------------------------------------------------
+input_str = 'amaama'
 
 
 check_sym_pali(input_str)
