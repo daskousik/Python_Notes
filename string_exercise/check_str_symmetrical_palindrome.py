@@ -13,5 +13,9 @@
 # Output:
 # The entered string is symmetrical
 # The entered string is palindrome
-
+def check_sym_pali(input_str):
+    pass
 input_str = 'khokho'
+
+
+check_sym_pali(input_str)
