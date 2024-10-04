@@ -19,7 +19,7 @@ print(freq_dict)
 
 all_freq = {}
 for ch in s:
-    all_freq[ch] += 1
+    all_freq[ch] = all_freq[ch] + 1
     if ch in all_freq:
         all_freq[ch] += 1
     else:

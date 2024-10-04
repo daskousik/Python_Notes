@@ -22,3 +22,4 @@ print('Half letter upper using loop.... ',res)
 # Method #2 : Using list comprehension + join() + upper()
 result = test_str[:middle] + test_str[middle:].upper()
 print('Half letter upper using slicing... ',result)
+

@@ -1,0 +1,83 @@
+Git:
+Version Control System is a tools that helps to track changes in code.
+
+Github:
+Website that allows developers to store and manages their code using Git.
+--------------------------------------------------------------------------------------------------------------------------
+Git Config......
+$ git config --global user.name "daskousik"
+$ git config --global user.email "daskousik799@gmail.com"
+--------------------------------------------------------------------------------------------------------------------------------
+Two System:
+Remote : Github
+Local : Laptop/PC
+--------------------------------------------------------------------------------------------------------------------------------------
+Clone  &v Status
+
+Clone: Cloning/Copy a repository/repo on our local machine.
+
+git clone <some link/repo link> https://github.com/daskousik/python.git
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+Status : Displays the state of the code. go to git directory then use git status command
+git status
+
+git status...
+untracked:
+new files that git does not yet track.
+
+modified:
+changed
+
+staged:
+file is ready to be committed.
+
+unmodified:
+unchnaged.
+
+How to changes  status  in git:
+
+change(modified)/ new file(untracked)---> add (staged) ---> commit(unchanged) ---> push
+------------------------------------------------------------------------------------------------------------------------------------------
+Add & Commit...........................................
+add : adds new or changed files in your working directory(local pc) to the Git staging area.
+
+git add <file name>   or git add . --->all changes file to add
+
+commit : it is the record of change.
+ git commit -m "some message"
+
+--------------------------------------------------------------------------------------------------------------
+Push Command................
+push - upload local repo content to remote repo
+git push origin main or
+
+------------------------------------------------------------------------------------------------------------------------
+For check hidden file .git
+use  ls -Force bcz in powershell ls -a not working.
+
+=============================================================================================================================================================================
+Local to Remote file upload...............................
+
+
+PS C:\Dropbox\python_v1> git --version
+PS C:\Dropbox\python_v1> git init
+PS C:\Dropbox\python_v1> git add .
+PS C:\Dropbox\python_v1> git commit -m "Added my_new_folder"
+PS C:\Dropbox\python_v1> git remote add origin https://github.com/daskousik/Python_Notes.git
+error: remote origin already exists.
+origin  https://github.com/daskousik/python.git (fetch)
+origin  https://github.com/daskousik/python.git (push)
+PS C:\Dropbox\python_v1> git remote set-url origin https://github.com/daskousik/Python_Notes.git
+PS C:\Dropbox\python_v1> git remote -v
+origin  https://github.com/daskousik/Python_Notes.git (fetch)
+origin  https://github.com/daskousik/Python_Notes.git (push)
+PS C:\Dropbox\python_v1> git push origin main or git push -u origin main
+
+----------------------------------------------------------------------------------------
+Summary : Make Github repo then clone to local machine , made some changes add to git and commit after that push back to remote/Github.
+General Workflow ....................
+Github repo ---> clone ---> chnages ----> add ---> commit ---> push
+
+
